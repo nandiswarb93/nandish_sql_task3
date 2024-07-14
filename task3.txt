@@ -1,0 +1,26 @@
+INSERT INTO Customers (CustomerID, CustomerName, Age, City, State)
+VALUES 
+(1, 'nandi', 25, 'Hyderabad', 'Telangana'),
+(2, 'nandu', 30, 'Bangalore', 'Karnataka'),
+(3, 'nandiswar', 28, 'Mumbai', 'Maharashtra'),
+(4, 'nandish', 22, 'Delhi', 'Delhi'),
+(5, 'nandis', 19, 'Hyderabad', 'Telangana');
+
+
+UPDATE Customers
+SET City = 'hyd'
+WHERE City = 'Hyderabad';
+
+
+DELETE FROM Customers
+WHERE Age < 20;
+
+
+DELETE FROM Customers
+WHERE City = 'Bangalore';
+
+
+
+UPDATE Customers
+SET State = 'Telangana'
+WHERE City = 'Hyderabad';
